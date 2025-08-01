@@ -1,6 +1,7 @@
 {
-  "name": "shadcnui",
+  "name": "ambervintageperformance",
   "type": "module",
+  "homepage": "https://drivanreis.github.io/ambervintageperformance",
   "packageManager": "pnpm@8.10.0",
   "scripts": {
     "dev": "vite",
