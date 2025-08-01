@@ -20,8 +20,8 @@ get_timestamp() {
 #     fi
 # }
 
-echo "🧹 Excluindo a pasta dist local..."
-rm -rf dist
+# echo "🧹 Excluindo a pasta dist local..."
+# rm -rf dist
 
 # Etapa 1: Tentativa de exclusão da branch gh-pages
 # delete_gh_pages_if_exists
@@ -33,19 +33,19 @@ git fetch --prune
 # delete_gh_pages_if_exists
 # sleep 15
 
-echo "🧽 Limpando o cache do Git local..."
-git gc --prune=now
-git remote prune origin
-sleep 15
+# echo "🧽 Limpando o cache do Git local..."
+# git gc --prune=now
+# git remote prune origin
+# sleep 15
 
-echo "⚙️  Criando nova build na pasta dist com Vite..."
-npm run build
+# echo "⚙️  Criando nova build na pasta dist com Vite..."
+# npm run build
 
-echo "💾 Commitando alterações no branch main..."
-git add .
-TIMESTAMP=$(get_timestamp)
-git commit -m "Nova pasta dist $TIMESTAMP"
-git push origin main
+# echo "💾 Commitando alterações no branch main..."
+# git add .
+# TIMESTAMP=$(get_timestamp)
+# git commit -m "Nova pasta dist $TIMESTAMP"
+# git push origin main
 
 echo "⏳ Aguardando 15 segundos para garantir atualização do GitHub..."
 sleep 15
