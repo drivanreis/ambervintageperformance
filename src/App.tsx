@@ -13,7 +13,7 @@ const App = () => (
     <ThemeProvider defaultTheme="light">
       <TooltipProvider>
         <Toaster />
-        <BrowserRouter>
+              <BrowserRouter basename="/ambervintageperformance">
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="*" element={<NotFound />} />
