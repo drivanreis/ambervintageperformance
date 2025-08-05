@@ -1,3 +1,5 @@
+// File: src/pages/Index.tsx
+
 import { Header } from "../components/header";
 import { HeroSection } from "../components/hero-section";
 import { EnginesSection } from "../components/engines-section";
